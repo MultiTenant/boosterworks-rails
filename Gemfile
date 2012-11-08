@@ -25,5 +25,5 @@ gem "rolify", ">= 3.2.0"
 gem "acts_as_tenant"
 gem 'simple_form'
 
-
+gem "thin"
 gem "therubyracer", ">= 0.10.2", :group => [:assets, :development], :platform => :ruby
