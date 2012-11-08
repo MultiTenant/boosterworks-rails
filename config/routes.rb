@@ -1,10 +1,12 @@
 BoosterworksRails::Application.routes.draw do
-  resources :events do as_routes end
 
   authenticated :user do
-    root :to => 'home#index'
+    root :to => 'accounts#index'
   end
   root :to => "home#index"
   devise_for :users
   resources :users, :only => [:show, :index]
+
+  resources :accounts, :only => [:index, :new]
+
 end

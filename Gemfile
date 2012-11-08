@@ -23,6 +23,7 @@ gem "devise", ">= 2.1.2"
 gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.2.0"
 gem "acts_as_tenant"
+gem 'simple_form'
 
 
 gem "therubyracer", ">= 0.10.2", :group => [:assets, :development], :platform => :ruby

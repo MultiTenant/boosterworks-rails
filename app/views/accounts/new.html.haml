@@ -1,0 +1,12 @@
+%h3 Register a new account
+%p If you're a representative of a organization that needs centralized shift scheduling and management for your volunteers, register your organization as a new BoosterWorks account.
+%p After your organization has an account, your members will be able to join your organization on BoosterWorks, granting them access to use the BooterWorks toolset for their needs.
+%hr
+%p If you're an organization member who is trying to gain access to your group's account, this isn't the right place. Click here to search for your organization.
+
+%hr
+
+= simple_form_for(@account, :html => {:class => 'form-horizontal' }) do |f|
+	= f.error_notification
+	= f.input :name, :label => "Organization Name"
+	= f.input :subdomain, :label => "Desired subdomain", :hint => "Your subdomain is the first part of the URL your members will type to access your site. For example, entering \"demo\" as a subdomain would make your group available at <i>demo.boosterworks.net</i>"
