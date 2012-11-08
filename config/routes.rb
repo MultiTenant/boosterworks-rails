@@ -1,4 +1,6 @@
 BoosterworksRails::Application.routes.draw do
+  resources :events do as_routes end
+
   authenticated :user do
     root :to => 'home#index'
   end

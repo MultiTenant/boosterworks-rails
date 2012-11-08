@@ -22,8 +22,7 @@ gem "bootstrap-sass", ">= 2.1.0.0"
 gem "devise", ">= 2.1.2"
 gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.2.0"
-gem 'acts_as_tenant'
-gem "activemerchant"
+gem "acts_as_tenant"
 
 
 gem "therubyracer", ">= 0.10.2", :group => [:assets, :development], :platform => :ruby
