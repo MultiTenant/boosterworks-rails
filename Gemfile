@@ -7,6 +7,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem "haml", ">= 3.1.7"
 gem "haml-rails", ">= 0.3.5", :group => :development
 gem "hpricot", ">= 0.8.6", :group => :development
@@ -24,6 +25,7 @@ gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.2.0"
 gem "acts_as_tenant"
 gem 'simple_form'
+gem 'rails3-jquery-autocomplete'
 
 gem "thin"
 gem "therubyracer", ">= 0.10.2", :group => [:assets, :development], :platform => :ruby
