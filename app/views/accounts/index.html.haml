@@ -5,6 +5,7 @@
 		= form_tag 'accounts/index' do
 			= label_tag(:name, "Search by Organization Name")
 			= autocomplete_field_tag 'name', '', autocomplete_account_name_accounts_path
+			= submit_tag("Search")
 	%div.span3
 		= form_tag do
 			= label_tag(:location, "Search by Organization Location") 
