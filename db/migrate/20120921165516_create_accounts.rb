@@ -1,6 +1,6 @@
-class CreateAccounts < ActiveRecord::Migration
+class CreateOrganizations < ActiveRecord::Migration
   def change
-    create_table :accounts do |t|
+    create_table :organizations do |t|
       t.string :name
       t.string :subdomain
 

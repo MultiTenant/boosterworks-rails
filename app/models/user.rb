@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  acts_as_tenant(:account)
+  acts_as_tenant(:organization)
   rolify
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,

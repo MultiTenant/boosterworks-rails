@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(:version => 20121108144943) do
 
-  create_table "accounts", :force => true do |t|
+  create_table "organizations", :force => true do |t|
     t.string   "name"
     t.string   "subdomain"
     t.datetime "created_at", :null => false
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20121108144943) do
     t.datetime "date"
     t.string   "venue"
     t.text     "notes"
-    t.integer  "account_id"
+    t.integer  "organization_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(:version => 20121108144943) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "name"
-    t.integer  "account_id"
+    t.integer  "organization_id"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
