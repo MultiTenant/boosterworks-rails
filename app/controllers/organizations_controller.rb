@@ -6,7 +6,11 @@ class OrganizationsController < ApplicationController
 	end
 
 	def show
-		@organization = current_user.organization
+
+	end
+
+	def dashboard
+		
 	end
 
 	def new
